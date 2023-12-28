@@ -1,0 +1,32 @@
+{
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"lint": "nuxt prepare && vue-tsc --noEmit && prettier --check ./",
+		"format": "prettier --write ./"
+	},
+	"devDependencies": {
+		"@nuxt/devtools": "latest",
+		"@nuxtjs/tailwindcss": "^6.8.0",
+		"nuxt": "^3.7.3"
+	},
+	"dependencies": {
+		"@supabase/supabase-js": "^2.36.0",
+		"flowbite": "^1.8.1",
+		"prettier": "^3.0.3"
+	},
+	"prettier": {
+		"printWidth": 160,
+		"useTabs": true,
+		"trailingComma": "none",
+		"bracketSameLine": true,
+		"semi": false,
+		"singleQuote": true
+	}
+}
